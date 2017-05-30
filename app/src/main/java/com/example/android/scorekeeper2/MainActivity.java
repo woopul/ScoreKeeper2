@@ -2,13 +2,14 @@ package com.example.android.scorekeeper2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA;
-    int foulsTeamA;
-    int scoreTeamB;
-    int foulsTeamB;
+    int scoreTeamA=0;
+    int foulsTeamA=0;
+    int scoreTeamB=0;
+    int foulsTeamB=0;
 
 
     @Override
@@ -51,31 +52,36 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public void scoreTeamA(){
+    public void scoreTeamA(View v){
         setScoreTeamA(getScoreTeamA()+1);
         displayScoreTeamA(getScoreTeamA());
     }
 
-    public void foulTeamA(){
+    public void foulTeamA(View v){
         setFoulsTeamA(getFoulsTeamA()+1);
         displayFoulsTeamA(getFoulsTeamA());
     }
 
-    public void scoreTeamB(){
-        setScoreTeamA(getScoreTeamB()+1);
-        displayScoreTeamA(getScoreTeamB());
+    public void scoreTeamB(View v){
+        setScoreTeamB(getScoreTeamB()+1);
+        displayScoreTeamB(getScoreTeamB());
     }
 
-    public void foulTeamB(){
-        setFoulsTeamA(getFoulsTeamB()+1);
-        displayFoulsTeamA(getFoulsTeamB());
+    public void foulTeamB(View v){
+        setFoulsTeamB(getFoulsTeamB()+1);
+        displayFoulsTeamB(getFoulsTeamB());
     }
 
-    public void reset(){
+    public void reset(View v){
         setFoulsTeamA(0);
         setScoreTeamA(0);
         setFoulsTeamB(0);
         setScoreTeamB(0);
+
+        displayFoulsTeamA(getFoulsTeamA());
+        displayScoreTeamA(getScoreTeamA());
+        displayFoulsTeamB(getFoulsTeamB());
+        displayScoreTeamB(getScoreTeamB());
     }
 
     /*

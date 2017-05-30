@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            android:src="@drawable/soccer_field" />
+            android:src="@drawable/soccer_field2" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="18dp"
                     android:onClick="scoreTeamA"
                     android:text="Goooal!!!" />
 
@@ -93,7 +93,7 @@
                     style="@style/large_Text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="8dp"
                     android:text="0" />
 
                 <TextView
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:gravity="center_horizontal"
-                    android:text="Team A"
+                    android:text="Team B"
                     android:textColor="#DCEDC8" />
 
                 <TextView
@@ -150,7 +150,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="18dp"
                     android:onClick="scoreTeamB"
                     android:text="Goooal!!!" />
 
@@ -168,7 +168,7 @@
                     style="@style/large_Text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
+                    android:layout_marginBottom="8dp"
                     android:text="0" />
 
                 <TextView
